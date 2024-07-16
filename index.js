@@ -3,9 +3,9 @@ const socket = require("websocket").server
 const server = http.createServer(() => {
 })
 
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
+});
 
-})
 
 const users = []
 
